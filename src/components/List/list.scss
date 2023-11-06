@@ -1,0 +1,43 @@
+.list{
+    width: 100%;
+    margin-top: 20px;
+    // background-color: white;
+  
+    .listTitle{
+        color:Title;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 50px;
+        font: 1.2em sans-serif;
+        letter-spacing: 1.2px;
+        color: white;
+    }
+    .wrapper{
+        position: relative;
+        .slideArrow{
+            width: 50px;
+            height: 100%;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            margin: auto;
+            background-color: rgb(101, 99, 99);
+            z-index: 99;
+            cursor: pointer;
+            &.left{
+                left:0;
+            }
+            &.right{
+                right:0;
+            }
+        } 
+        .container{
+            display: flex;
+            width: max-content;
+            margin: 10px;
+            margin-left: 50px;
+            transition: transform ease-in 0.3s;
+            transform: translateX(0px);
+        }
+    }
+}
